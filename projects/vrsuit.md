@@ -38,10 +38,10 @@ The materials for our project consist of a mixture of software and hardware:
 
 ## Results
 The project was overall a success. We split the project into two parts the gloves component and the body suit component.
-  <h2 class="subheading">Gloves</h2>
-    - The flex sensors were glued to each glove finger. Once tested, Raspberry Pi was able to distinguish between 0 45 and 90 degrees for each     finger. We made sure that the bend at each angle didn’t exceed the max amount of voltage (5 volts). We used 3 ADC and voltage dividers to read the sensor. And used the Raspberry Pi to read voltage on a single I2C bus
-  <h2 class="subheading">Body Suit</h2>
-    - A vest was used with a pocket attached to hold the Raspberry Pi and some of the wiring. This set up allowed for ease of movement while in use.  
-    - The raspberry pi collected information from both the gloves and the body suit.
+  - Gloves
+      - The flex sensors were glued to each glove finger. Once tested, Raspberry Pi was able to distinguish between 0 45 and 90 degrees for each     finger. We made sure that the bend at each angle didn’t exceed the max amount of voltage (5 volts). We used 3 ADC and voltage dividers to read the sensor. And used the Raspberry Pi to read voltage on a single I2C bus
+  - Body Suit
+      - A vest was used with a pocket attached to hold the Raspberry Pi and some of the wiring. This set up allowed for ease of movement while in use.  
+      - The raspberry pi collected information from both the gloves and the body suit.
 We were able to read all ten of the flex sensors and 12 orientation sensors. We adjusted the raspberry pi to accommodate 6 I2C busses so 2 orientation sensors could be read per bus, so that 
 data from all of the sensors can be read by the Raspberry Pi. We then created a socket program to send the data to the client computer, which animates Unity-Chan.
