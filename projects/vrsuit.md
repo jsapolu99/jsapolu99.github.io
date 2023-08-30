@@ -6,7 +6,7 @@ title: "Motion Capture Suit"
 date: 2021
 published: true
 labels:
-  - Robotics
+  - C#
   - Python
   - Arduino
 summary: "My team developed a full body motion capture suit that tracked user's motion for virtual reality"
