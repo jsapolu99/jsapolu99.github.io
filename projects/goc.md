@@ -1,15 +1,13 @@
 ---
 layout: project
 type: project
-image: img/vrsuit/447034C8-B704-4A75-86F7-D2808FC27DCD_1_201_a.jpeg
-title: "Motion Capture Suit"
+image: img/goc/2712ADFA-31F9-4F4A-869B-39FC68EC59A6_1_201_a.jpeg
+title: "Glock on the Clock"
 date: 2021
 published: true
 labels:
-  - C#
-  - Python
-  - Arduino
-summary: "My team developed a full body motion capture suit that tracked user's motion for virtual reality"
+  - C
+summary: "For our EE 160 final project, my team developed an ASCII based shooter that runs in the console window."
 ---
 
 <div class="text-center p-4">
