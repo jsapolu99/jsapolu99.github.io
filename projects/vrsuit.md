@@ -14,8 +14,8 @@ summary: "My team developed a full body motion capture suit that tracked user's 
 
 <div class="text-center p-4">
   <img width="200px" src="../img/vrsuit/D3C10055-1BA6-47A8-88EC-2EFEBF927F6D.jpeg" class="img-thumbnail" >
-  <img width="200px" src="../img/micromouse/micromouse-robot-2.jpg" class="img-thumbnail" >
-  <img width="200px" src="../img/micromouse/micromouse-circuit.png" class="img-thumbnail" >
+  <img width="200px" src="../img/vrsuit/AF4DF049-9423-4120-8C4C-D30C1E06F37F.jpeg" class="img-thumbnail" >
+  <img width="200px" src="..img/vrsuit/EC6661AA-F450-4C7F-BAF3-C4E0B0E23722.jpeg" class="img-thumbnail" >
 </div>
 
 Over the summer of 2021, I was part of a research team at Leeward community college. Our goal was to develop and built a functional full body motion capture suit for use in virtual reality.
