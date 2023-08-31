@@ -11,8 +11,8 @@ summary: "For our EE 160 final project, my team developed an ASCII based shooter
 ---
 
 <div class="text-center p-4">
-  <img width="200px" src="../img/goc/8F6A1D3B-CE7E-4AE2-A66E-08D1664E870C.jpeg" class="img-thumbnail" >
-  <img width="200px" src="../img/goc/FBEE3412-86F7-40FA-858E-2D51FFD42807.jpeg" class="img-thumbnail" >
+  <img src="../img/goc/8F6A1D3B-CE7E-4AE2-A66E-08D1664E870C.jpeg" class="img-thumbnail" >
+  <img src="../img/goc/FBEE3412-86F7-40FA-858E-2D51FFD42807.jpeg" class="img-thumbnail" >
 </div>
 
 For the final project of EE 160, our team was tasked with creating an ASCII based game. After much deliberation my 2 group members and I, decided on creating a shooting game and aptly naming it Glock on the Clock. In the game the player controls a ship ">", and has to shoot all the randomly generated targets "+" on the stage before the times runs out. 
