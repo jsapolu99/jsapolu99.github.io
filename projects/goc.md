@@ -18,38 +18,37 @@ summary: "For our EE 160 final project, my team developed an ASCII based shooter
 For the final project of EE 160, our team was tasked with creating an ASCII based game. After much deliberation my 2 group members and I, decided on creating a shooting game and aptly naming it Glock on the Clock. In the game the player controls a ship ">", and has to shoot all the randomly generated targets "+" on the stage before the times runs out. 
 
 ## How the Game Works:
-Shooter Game: (SRS DOCUMENT)
 
 (Playing Field) Room to Roam
--border around the grid indicating position limits
+- border around the grid indicating position limits
 
 (Player Avatar) Character and Movement 'wasd'
--ability to move in all directions considering objects and limits
--doesn't leave trail
--makes which way character is facing distinct
+- ability to move in all directions considering objects and limits
+- doesn't leave trail
+- makes which way character is facing distinct
 
 (Ability) Shooting 'o'
--pressing a button fires bullet from character traveling in same direction while considering objects and limits
-  -bullet stops and disappears after hitting a wall or target
--can hit targets (the collision is recognized with score)
+- pressing a button fires bullet from character traveling in same direction while considering objects and limits
+  - bullet stops and disappears after hitting a wall or target
+- can hit targets (the collision is recognized with score)
 
 (Ability) Grenade 'i'
--button press to throw a grenade in front of character
--rids anything destroyable in square radius (player included)
-  -player can die and lose lives
--considers limits, character orientation, and character position
-  -'nades bounce back to land in an open position if too many obstacles ahead or too close to the border
--shows an animation of explosion considering limits and player
--score increases the same amount as targets destroyed
+- button press to throw a grenade in front of character
+- rids anything destroyable in square radius (player included)
+  - player can die and lose lives
+- considers limits, character orientation, and character position
+  - 'nades bounce back to land in an open position if too many obstacles ahead or too close to the border
+- shows an animation of explosion considering limits and player
+- score increases the same amount as targets destroyed
 
 (2nd Degree Ability) Nuke 'i button upgrade'
--grenade upgrade functioning the same
-  -except only unlocks through the shop and with enough score
-  -all nades become nukes for a round if the option is bought
--bigger blast radius, different display messages, different animations and visuals (distinguishable from regular grenades)
--destroying targets still recognized with incrementing score
--suicide still recognized especially with the larger radius
--still recognizes boundaries and the character position/orientation
+- grenade upgrade functioning the same
+  - except only unlocks through the shop and with enough score
+  - all nades become nukes for a round if the option is bought
+- bigger blast radius, different display messages, different animations and visuals (distinguishable from regular grenades)
+- destroying targets still recognized with incrementing score
+- suicide still recognized especially with the larger radius
+- still recognizes boundaries and the character position/orientation
 
 (Danger) Yourself
 - blast radius is a kill zone for the player
