@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/goc/2712ADFA-31F9-4F4A-869B-39FC68EC59A6_1_201_a.jpeg
+image: img/goc/AD8DB177-D5BF-4138-8277-3F0A63A7B735.jpeg
 title: "Glock on the Clock"
 date: 2021
 published: true
@@ -11,35 +11,97 @@ summary: "For our EE 160 final project, my team developed an ASCII based shooter
 ---
 
 <div class="text-center p-4">
-  <img width="200px" src="../img/vrsuit/D3C10055-1BA6-47A8-88EC-2EFEBF927F6D.jpeg" class="img-thumbnail" >
-  <img width="200px" src="../img/vrsuit/AF4DF049-9423-4120-8C4C-D30C1E06F37F.jpeg" class="img-thumbnail" >
-  <img width="200px" src="../img/vrsuit/EC6661AA-F450-4C7F-BAF3-C4E0B0E23722.jpeg" class="img-thumbnail" >
+  <img width="200px" src="../img/goc/8F6A1D3B-CE7E-4AE2-A66E-08D1664E870C.jpeg" class="img-thumbnail" >
+  <img width="200px" src="../img/goc/FBEE3412-86F7-40FA-858E-2D51FFD42807.jpeg" class="img-thumbnail" >
 </div>
 
-Over the summer of 2021, I was part of a research team at Leeward community college. Our goal was to develop and built a functional full body motion capture suit for use in virtual reality.
+For the final project of EE 160, our team was tasked with creating an ASCII based game. After much deliberation my 2 group members and I, decided on creating a shooting game and aptly naming it Glock on the Clock. In the game the player controls a ship ">", and has to shoot all the randomly generated targets "+" on the stage before the times runs out. 
 
-## Materials
-The materials for our project consist of a mixture of software and hardware:
+## How the Game Works:
+Shooter Game: (SRS DOCUMENT)
 
-  - The Power Gloves used Flex Sensors in conjunction with ADS1015 Analog to Digital Converters, which will be referred to as “ADC” from this point on.
-  - BNO055 Orientation Sensors, or “Orientation Sensors” for future reference, were used for the Motion Capture Suit
-  - We used a Raspberry Pi 4 equipped with Linux Operating System
-  - We used Python to program the Raspberry Pi
-  - We also used the Unity Engine and Visual Studio (for C# programing)
+(Playing Field) Room to Roam
+-border around the grid indicating position limits
 
-## Methods
-  - The FLEX SENSORS change resistance based upon the amount of bending. We used a voltage divider to determine the resistance and read the voltage with the ADCs
-  - The ADCs convert the analog voltage data and converts it into digital data, to be sent to and read by the HOST COMPUTER, in our case, the RASPBERRY PI.
-  - The ORIENTATION SENSORS collect yaw, pitch, and roll data from various actuation points, including the head, spine, the arms, and the legs, and also sends that data to the HOST COMPUTER.
-  - The RASPBERRY PI is our HOST COMPUTER, which collects all the data from the sensors and sends it to the CLIENT COMPUTER.
-  - The CLIENT COMPUTER runs the UNITY ENGINE, which reads and translates all the data being sent from the RASPBERRY PI to animate our Virtual Reality character UNITY-CHAN.
+(Player Avatar) Character and Movement 'wasd'
+-ability to move in all directions considering objects and limits
+-doesn't leave trail
+-makes which way character is facing distinct
 
-## Results
-The project was overall a success. We split the project into two parts the gloves component and the body suit component.
-  <h2 class="subheading">Gloves</h2>
-    - The flex sensors were glued to each glove finger. Once tested, Raspberry Pi was able to distinguish between 0 45 and 90 degrees for each     finger. We made sure that the bend at each angle didn’t exceed the max amount of voltage (5 volts). We used 3 ADC and voltage dividers to read the sensor. And used the Raspberry Pi to read voltage on a single I2C bus
-  <h2 class="subheading">Body Suit</h2>
-    - A vest was used with a pocket attached to hold the Raspberry Pi and some of the wiring. This set up allowed for ease of movement while in use.  
-    - The raspberry pi collected information from both the gloves and the body suit.
-We were able to read all ten of the flex sensors and 12 orientation sensors. We adjusted the raspberry pi to accommodate 6 I2C busses so 2 orientation sensors could be read per bus, so that 
-data from all of the sensors can be read by the Raspberry Pi. We then created a socket program to send the data to the client computer, which animates Unity-Chan.
+(Ability) Shooting 'o'
+-pressing a button fires bullet from character traveling in same direction while considering objects and limits
+  -bullet stops and disappears after hitting a wall or target
+-can hit targets (the collision is recognized with score)
+
+(Ability) Grenade 'i'
+-button press to throw a grenade in front of character
+-rids anything destroyable in square radius (player included)
+  -player can die and lose lives
+-considers limits, character orientation, and character position
+  -'nades bounce back to land in an open position if too many obstacles ahead or too close to the border
+-shows an animation of explosion considering limits and player
+-score increases the same amount as targets destroyed
+
+(2nd Degree Ability) Nuke 'i button upgrade'
+-grenade upgrade functioning the same
+  -except only unlocks through the shop and with enough score
+  -all nades become nukes for a round if the option is bought
+-bigger blast radius, different display messages, different animations and visuals (distinguishable from regular grenades)
+-destroying targets still recognized with incrementing score
+-suicide still recognized especially with the larger radius
+-still recognizes boundaries and the character position/orientation
+
+(Danger) Yourself
+- blast radius is a kill zone for the player
+  - lose a life, respawn in starting position, and display warning messages
+- no danger if character is beyond the blast
+
+(Objective) Targets to Destroy
+- randomly generated within room limits
+  - always 10 total each round, no duplicate target positions
+- only bullets, nades, and nukes interact with targets
+  - character can't walk through them
+- collisions are recognized with +1 score and target disappearing
+
+(Round Progress & Shop Curreny) Score
+- keeps track of number of targets destroyed minus spent points
+- 10 available score points per round
+- accumulates through the rounds
+- can be spent in the shop for perks
+
+(Danger) Time limit
+- certain amount of time to shoot all targets before game over
+- differs with dificulty 
+- time limit runs while player is able to move character
+
+(Optional Difficulty) Difficulty Setting
+- player is prompted to choose a setting before round starts
+  - regardless of how many rounds have passed
+- Easy: 60 seconds   -Hard: 30 seconds   -Pro: 15 seconds
+
+(Losing) Game Over
+- display if player runs out of time
+- display if character lives reach 0
+- asks if player wants to play again
+
+(Winning) You Win
+- display if character shoots all targets within given time
+- asks if player wants to continue
+- asks if player wants to browse the shop
+- can continue with previous stats
+
+(Reward for Winning) Shop Option
+- exchange score points for the shop's perks after winning
+  *extra life for 5p
+  *extra nades for 8p
+  *nuke-nades next round for 10p
+- can buy multiple perks at once
+
+(Fun)
+- some color to be a bit more interesting and visually stimulating
+- built-in humor
+- challenge yourself
+
+
+
+  
