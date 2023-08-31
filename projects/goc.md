@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/goc/AD8DB177-D5BF-4138-8277-3F0A63A7B735.jpeg
+image: img/goc/AD8DB177-D5BF-4138-8277-3F0A63A7B735_1_201_a.jpeg
 title: "Glock on the Clock"
 date: 2021
 published: true
