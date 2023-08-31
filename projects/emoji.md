@@ -8,7 +8,7 @@ published: true
 labels:
   - Swift
   - SwiftUI
-summary: "Emoji Explorer is a very simple ios application that lets you select emojis from a list, and display them"
+summary: "Emoji Explorer is a very simple ios application that lets you select emojis from a list and display them."
 ---
 
 <div class="text-center p-4">
