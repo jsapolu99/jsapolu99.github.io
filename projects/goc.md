@@ -102,6 +102,7 @@ Shooter Game: (SRS DOCUMENT)
 - built-in humor
 - challenge yourself
 
+You can try the game yourself, just click [here](https://manoa.hawaii.edu/news/article.php?aId=2857). Run the program and type "make" then "./hellomake".
 
 
   
