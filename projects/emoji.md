@@ -16,7 +16,7 @@ summary: "Emoji Explorer is a very simple ios application that lets you select e
 </div>
 
 ## Explanation
-Due to system resetting my old laptop in preperation to give it away. I have lost all my previous class projects that I was hoping to include in this portfolio. Panicking about what to add in their place, I decided to look into learning how to develop ios applications. Emoji Explorer is the byproduct of this decision, and is my very first ios application. I plan to continue learning how to work with Swift and SwiftUI, and will soon update this project with a more flushed out ios application in the near future. In the meantime please enjoy the emojis!
+Due to system resetting my old laptop in preperation to give it away, I have lost all my previous class projects that I was hoping to include in this portfolio. Panicking about what to add in their place, I decided to look into learning how to develop ios applications. Emoji Explorer is the byproduct of this decision, and is my very first ios application. I plan to continue learning how to work with Swift and SwiftUI, and will soon update this project with a more flushed out ios application in the near future. In the meantime please enjoy the emojis!
 
 <div class="text-center p-4">
   <img src="../img/emoji/Screenshot 2023-08-30 at 9.36.45 PM.png" >
