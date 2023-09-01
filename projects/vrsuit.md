@@ -18,7 +18,7 @@ summary: "My team developed a full body motion capture suit that tracked user's 
   <img width="200px" src="../img/vrsuit/EC6661AA-F450-4C7F-BAF3-C4E0B0E23722.jpeg" class="img-thumbnail" >
 </div>
 
-Over the summer of 2021, I was part of a research team at Leeward community college. Our goal was to develop and built a functional full body motion capture suit for use in virtual reality.
+Over the summer of 2021, I was part of a research team at Leeward community college. Our goal was to develop and build a functional full body motion capture suit for use in virtual reality.
 
 ## Materials
 The materials for our project consist of a mixture of software and hardware:
