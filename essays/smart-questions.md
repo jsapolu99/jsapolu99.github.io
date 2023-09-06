@@ -1,99 +1,38 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "Don't be a Luser Ask Smart Questions"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
-published: false
+date: 2023-09-05
+published: true
 labels:
   - Questions
   - Answers
   - StackOverflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+## Introduction
+In the realm of software engineering, we often find ourselves in situations where our code is not working properly. After spending hours trying to figure it out to no avail, many software engineers turn to community forums such as StackOverflow, in hopes that someone graciously helps them with their problem. But just like answers from the community, not all questions are of the same quality. Having read Eric Steven Raymond’s essay [“How to Ask Questions the Smart Way”] (“http://www.catb.org/esr/faqs/smart-questions.html”), I have learned what makes a question worth answering. It is the goal of this essay to share Raymond’s teachings by providing two examples: a bad question, and a good question, and analyzing what makes one far superior to the other. 
 
-## Is there such thing as a stupid question?
+## Good Question
+### MapboxGL won't work in NodeJS production environment, but works in development
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+This user’s question is a rather good example of how to ask a smart question. The subject field of this question is concise and informs readers of the problem at hand. In the body of this question, the author explains the steps he took to try and solve the problem before posting, including searching for related posts and providing their links. Also in the post are snippets of plain text of the user’s code, as well as the errors that were thrown. 
 
-## What’s a smart question?
+All in all this question provides respondents with exactly what they need to potentially solve the problem. Furthermore the author’s inclusion of his previous efforts give respect to respondents' time, proving to them that this is a question worthy of receiving an answer. 
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+See the post [here] (“https://stackoverflow.com/questions/76973176/mapboxgl-wont-work-in-nodejs-production-environment-but-works-in-development”)
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
 
-```
-Q: python date of the previous month
+## Bad Question
+### “I’m new to coding sorry if its a dumb question. But how do I make it so it shows only the third option in an If Else ”
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
+This is undoubtedly a horrible question. Simply by reading the subject it is clear to the community that this person put no effort into figuring out their issue, before running to the forum to ask for help. Openly admitting his question is dumb, and expecting the community to have pity on him, and give him the answer. 
 
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
+Additionally rather than posting their code in plain text, they link an image of their screen. This makes it impossible for potential respondents to copy and paste the code into their IDEs, making it impossible for them to easily replicate the problem and find a solution. The poster of this question never received the answer they wanted. In fact they were scolded by other users for the poor state of the post, one respondent going as far as to send them a link to a similar “how to ask a good question” essay. The post is now closed and will not receive any further answers. 
 
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
-
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
-```
-
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
-
-```
-A: datetime and the datetime.timedelta classes are your friend.
-
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
-
-Like this:
-
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
-```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
-
-## The foolproof way to get ignored.
-
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
+See the post [here] (“https://stackoverflow.com/questions/77048573/im-new-to-coding-sorry-if-its-a-dumb-question-but-how-do-i-make-it-so-it-show”)
 
 ## Conclusion
+Communities like stack overflow rely on unpaid users to help one another. The least someone can do is put a little effort into how exactly they ask for help, as no one wants to waste their time on a simple question that could easily be googled, or a question that provides little to know information as to how the error occurred. It is imperative that we remember these people do not get paid to answer our questions, they do it out of the kindness of their hearts, and therefore should be given the respect they deserve. 
 
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
