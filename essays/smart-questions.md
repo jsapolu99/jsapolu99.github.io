@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Don't be a Luser Ask Smart Questions"
+title: "Don't be a "Luser" Ask Smart Questions"
 # All dates must be YYYY-MM-DD format!
 date: 2023-09-05
 published: true
