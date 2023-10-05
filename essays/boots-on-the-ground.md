@@ -10,8 +10,9 @@ labels:
   - UI Framework
   - BootStrap
 ---
-## Introduction;
-My journey into the world of programming began in high school with an AP Computer Science class. I was by no means an exemplary student, but somehow found my way in the course despite it. Initially, I felt out of place, assuming everyone else enrolled in the course were geniuses who burst out of the womb coding. Every bone in my body was telling me to drop the class and the first lesson hadn't even started. Needless to say I had my doubts but, I decided to give it a chance and stay in the class. Quickly, I realized that it wasn't nearly as hard as I assumed. More importantly, I realized that it was something I really enjoyed. 
+## Introduction:
+In my limited experience learning and using the UI framework Bootstrap, I have struggled more than when learning new actual programming languages. Something about Bootstrap just doesn't seem to want to click in my mind, and I often find myself scouring its documentation looking for solutions. Despite this, I am certain that Bootstrap is well worth the learning curve, as once I’ve got the hang of it, I will be able to rapidly create responsive web applications with ease. 
+
 
 ## Jon.educationalJourney = 
 It's been a long time since I first learned how to code. I had graduated from high school, took two years off from school, and decided to enroll at Leeward Community College in hopes of becoming a mechanical engineer. My courses were going well enough, most of my prerequisites were taken care of, and I would soon be transferring to University of Hawaii's College of Engineering. However, over the semesters my passion for physics faded away, leaving me to question if this was really what I wanted to be doing for the rest of my life. I had recently been part of a research project that required me to do some programming. The experience reminded me of how much I enjoyed coding, so much so that I decided to switch my major to computer science and haven't looked back since. 
