@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Embarking on the Code Odyssey"
 # All dates must be YYYY-MM-DD format!
-date: 2023-11-20
+date: 2023-12-11
 published: true
 labels:
   - Software Engineering
