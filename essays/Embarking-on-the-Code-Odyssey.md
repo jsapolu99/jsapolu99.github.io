@@ -12,10 +12,12 @@ labels:
 ---
 
 # Unveiling the World of Programming
+---
 
 In the Fall semester of 2023, a transformative journey into the world of programming commenced for me through the immersive experience provided by ICS 314: Software Engineering. This course served as a catalyst in shaping my identity as a programmer. While web application development formed a significant part of the curriculum, the acquired skills transcend the mere surface-level grasp of web coding. This essay intends to delve into the profound implications of the software engineering concepts cultivated during this course, with a focused exploration of Open Source Software Development and Agile Project Management. 
 
 # Harmonizing the Code Symphony
+---
 
 ## Open Source Software Development
 
@@ -32,6 +34,7 @@ This encounter with open source software went beyond mere utilization; it became
 In essence, this hands-on experience with open source software during the final project not only reinforced the importance of collaborative development but also illuminated the vast opportunities and resources available within the open source ecosystem. It exemplified the ethos of knowledge-sharing and community-driven innovation, leaving an indelible mark on my perception of software development and its potential for transformative learning.
 
 # Navigating the Agile Horizon
+---
 
 ## Crafting Agile Solutions: A Symphony of Adaptability
 
@@ -50,6 +53,7 @@ The culmination of my experience with this management style occurred during the 
 The efficacy of this management style became evident as it provided a clear roadmap of responsibilities for each group member. The structured approach of Milestones not only facilitated efficient collaboration but also ensured a transparent and organized development process. This experience reinforced my appreciation for the pragmatic and adaptive principles that Agile Project Management, particularly the Issue Driven approach, brings to project execution.
 
 # Concluding the Code Symphony: A Harmonious Future
+---
 
 As the curtain falls on this code symphony, the fusion of Open Source Software Development and Agile Project Management has orchestrated a transformative journey. The collaborative spirit of open source and the adaptability of Agile have not just been methodologies; they've been the notes composing a melody that navigated us through challenges, innovations, and triumphs. This harmonious blend has left me better equipped for the dynamic seas ahead, where the code becomes a powerful instrument, creating transformative echoes in the vast landscape of software engineering.
 
