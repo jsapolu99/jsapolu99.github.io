@@ -19,9 +19,7 @@ In the Fall semester of 2023, a transformative journey into the world of program
 # Harmonizing the Code Symphony
 ---
 
-## Open Source Software Development
-
-### What Is It?
+### Open Source Software Development
 Open Source Software Development is a collaborative approach to creating and improving software. In this model, the source code of a software application is made available to the public, allowing anyone to view, modify, and distribute the code. The term "open source" refers to the fact that the source code is open and accessible to the public. 
 
 ### My Experience
@@ -36,9 +34,7 @@ In essence, this hands-on experience with open source software during the final 
 # Navigating the Agile Horizon
 ---
 
-## Crafting Agile Solutions: A Symphony of Adaptability
-
-### Unveiling Agile Project Management:
+### Crafting Agile Solutions: A Symphony of Adaptability
 
 Agile Project Management represents a dynamic and iterative approach to project management, with a primary focus on adaptability and customer satisfaction. Departing from the rigid structures of traditional project management methodologies, Agile thrives on embracing change and fostering continuous improvement throughout the project's lifecycle.
 
