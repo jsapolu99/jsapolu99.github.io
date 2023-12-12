@@ -21,4 +21,4 @@ We wanted this AI search engine to be able to respond to queries as helpfully as
 All users have acssess to the interface at the landing page, but we also provided login capabilities in order for the AI to be able to store previous chat sessions(WIP). This includes “admin” accounts that have access to our “Analytics” page that helps to show the most popular articles used as references to form a response.
 
 ## Landing Page
-<img class="img-fluid" src="img/4317D0D0-C8E8-42F2-81F3-2D38ED073676.jpeg">
+<img class="img-fluid" src="img/4317D0D0-C8E8-42F2-81F3-2D38ED073676.png">
