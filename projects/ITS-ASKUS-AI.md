@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/41327EF7-9A73-48AD-A6E1-7066E8AD05C1_1_201_a.jpeg
+image: img/25F7B31B-A924-4E98-BAD2-FAE416F93F7B_1_201_a.jpeg
 title: "ITS Ask Us AI"
 date: 2023
 published: true
