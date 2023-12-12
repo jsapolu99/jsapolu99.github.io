@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/41327EF7-9A73-48AD-A6E1-7066E8AD05C1_1_201_a.jpeg
 title: "ITS Ask Us AI"
 date: 2023
 published: true
