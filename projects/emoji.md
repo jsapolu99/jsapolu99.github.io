@@ -4,7 +4,7 @@ type: project
 image: img/emoji/EA8FCA22-9BCB-4E92-A994-D4D17F99E1FA_1_201_a.jpeg
 title: "Emoji Explorer"
 date: 2023
-published: true
+published: false
 labels:
   - Swift
   - SwiftUI
