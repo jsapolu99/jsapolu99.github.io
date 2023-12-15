@@ -20,6 +20,12 @@ summary: "My team developed a full body motion capture suit that tracked user's 
 
 Over the summer of 2021, I was part of a research team at Leeward community college. Our goal was to develop and build a functional full body motion capture suit for use in virtual reality.
 
+## My Responsibilities:
+My assignment involved the development of a Python program on the Raspberry Pi, responsible for interpreting data from sensors and transmitting it to the client computer. The objective was to facilitate the rendering of movement within the Unity Engine.
+
+## What I learned:
+In conclusion, my initial foray into Python was a rewarding experience, marked by significant learning under the guidance of our project-leading professor. This endeavor not only deepened my understanding of Python coding but also introduced me to the practical aspects of working with hardware, notably the Raspberry Pi and diverse sensors. This foundational knowledge has set the stage for continued growth and exploration in both programming and hardware integration.
+
 ## Materials
 The materials for our project consist of a mixture of software and hardware:
 
