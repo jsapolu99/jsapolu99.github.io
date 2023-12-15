@@ -19,8 +19,7 @@ In the world of street gangs, the importance of having a single, authoritative f
 
 Picture this: Market Saturation, with its singular influence, controls the entire black market of a city. Similarly, the Singleton pattern establishes dominance over the instantiation of a class, allowing it to control and coordinate actions without interference from other instances.
 
-<img class="img-fluid" src="../img/image.png" width="300px">
-
+<img class="img-fluid" src="../img/singleton.png" width="300px">
 
 ## Street Smarts (Observer)
 In the gritty world of street gangs, information is power. Knowing when rival gangs make a move or when the police are closing in can be the difference between triumph and downfall. Here, we introduce the Observer design pattern, drawing parallels between the Observer pattern and the intricate communication network of our gang, Market Saturation (MS).
@@ -32,6 +31,8 @@ Likewise, the Observer pattern facilitates communication between objects without
 Consider this scenario: one gang member observes a rival gang gathering weapons, triggering a chain reaction of alerts throughout MS. In software terms, an object's state change triggers notifications to its dependents, ensuring that the system remains responsive and adaptive.
 
 The Observer pattern embodies the essence of strategic intelligence, providing a mechanism for objects to stay informed about each other's actions without direct dependencies. In the volatile landscape of both street gangs and software development, the ability to adapt to unforeseen events is a powerful advantage.
+
+<img class="img-fluid" src="../img/image.png" width="300px">
 
 ## Conclusion
 In the world of software development, the idea of comparing design patterns to street gangs might seem like an unusual analogy. However, much like a gang operating in the shadows of a city, design patterns silently influence the landscape of code. Our exploration, drawing parallels between the Singleton and Observer patterns and the hypothetical gang "Market Saturation," serves as a whimsical journey through the diverse realms of code and street smarts.
