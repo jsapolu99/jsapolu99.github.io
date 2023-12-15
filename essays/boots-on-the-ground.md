@@ -19,11 +19,11 @@ While I found satisfaction in employing basic CSS to style my HTML elements, I'v
 
 ### My Creation:
 
-<img src="../img/laulima.jpeg"> 
+<img src="../img/laulima.jpeg" width="500px"> 
 
 ### The Real Deal:
 
-<img src="../img/laulima-real.jpeg">
+<img src="../img/laulima-real.jpeg" width="500px">
 
 ## Glass Slippers vs Boots
 
