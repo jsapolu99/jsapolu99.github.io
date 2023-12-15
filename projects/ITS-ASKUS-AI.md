@@ -22,3 +22,7 @@ All users have acssess to the interface at the landing page, but we also provide
 
 ## Landing Page
 <img class="img-fluid" src="../img/4317D0D0-C8E8-42F2-81F3-2D38ED073676.png">
+
+In partnership with [James Ligeralde](https://jligeral.github.io/), our collaborative efforts focused on segmenting articles into distinct textual units. Employing OpenAI's sophisticated [text-embedding-ada-002](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) model, we skillfully embedded these text chunks. The resulting embeddings, along with the segmented text, found a home in the vector database [Pinecone](https://docs.pinecone.io/). Our responsibilities extended to embedding user queries using the same model and querying the vector database using cosine similarity. This facilitated the retrieval of pertinent articles, which, in turn, powered OpenAI's [text generation model](https://platform.openai.com/docs/guides/text-generation) to craft insightful and conversational responses.
+
+
