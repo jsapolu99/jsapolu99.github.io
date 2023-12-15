@@ -25,4 +25,10 @@ All users have acssess to the interface at the landing page, but we also provide
 
 In partnership with [James Ligeralde](https://jligeral.github.io/), our collaborative efforts focused on segmenting articles into distinct textual units. Employing OpenAI's sophisticated [text-embedding-ada-002](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings) model, we skillfully embedded these text chunks. The resulting embeddings, along with the segmented text, found a home in the vector database [Pinecone](https://docs.pinecone.io/). Our responsibilities extended to embedding user queries using the same model and querying the vector database using cosine similarity. This facilitated the retrieval of pertinent articles, which, in turn, powered OpenAI's [text generation model](https://platform.openai.com/docs/guides/text-generation) to craft insightful and conversational responses.
 
+## Analytics Page
+<img class="img-fluid" src="">
+
+Additionally, we developed an Analytics page featuring a visually engaging doughnut graph generated with [Chart.js](https://www.chartjs.org/), alongside links to the top 3 most used articles. This dynamic display highlighted the most frequently accessed articles, complemented by convenient links to the top three articles garnering the highest usage.
+
+
 
