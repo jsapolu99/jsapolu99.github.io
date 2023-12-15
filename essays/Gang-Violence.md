@@ -19,6 +19,9 @@ In the world of street gangs, the importance of having a single, authoritative f
 
 Picture this: Market Saturation, with its singular influence, controls the entire black market of a city. Similarly, the Singleton pattern establishes dominance over the instantiation of a class, allowing it to control and coordinate actions without interference from other instances.
 
+<img class="img-fluid" src="../img/image.png" width="300px">
+
+
 ## Street Smarts (Observer)
 In the gritty world of street gangs, information is power. Knowing when rival gangs make a move or when the police are closing in can be the difference between triumph and downfall. Here, we introduce the Observer design pattern, drawing parallels between the Observer pattern and the intricate communication network of our gang, Market Saturation (MS).
 
