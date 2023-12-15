@@ -10,7 +10,7 @@ labels:
   - Design Patterns
 ---
 ## Introduction:
-In 1994 the gang of four (GOF) released their famous book Design Patterns, introducing to the world twenty three object oriented design patterns that would go on to revolutionize the software engineering field. Now in 2023, this essay will attempt to describe a few of the GOF’s holy patterns using an analogy to a different type of gang, street gangs. 
+In 1994 the Gang of Four (GOF) released their famous book Design Patterns, introducing to the world twenty-three object oriented design patterns that would go on to revolutionize the software engineering field. Now in 2023, this essay will attempt to describe a few of the GOF’s holy patterns using an analogy to a different type of gang, street gangs. 
 
 ## Starting a Gang (Singleton)
 Okay so first things first, we have to create a gang. We want the name of our gang to strike fear into the hearts of our enemies, so let’s call it “Market Saturation”, or MS for short. Obviously, there can only be a single instance of MS, ensuring that our gang remains powerful and centralized. This brings us to the Singleton design pattern, akin to the concept of having only one prominent gang in a city. The Singleton pattern, much like the unwavering unity of Market Saturation, ensures that there is only one instance of a class. This prevents the unnecessary duplication of resources and ensures that our gang operates as a cohesive and formidable unit.
