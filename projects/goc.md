@@ -17,6 +17,14 @@ summary: "For our EE 160 final project, my team developed an ASCII based shooter
 
 For the final project of EE 160, our team was tasked with creating an ASCII based game. After much deliberation my 2 group members and I, decided on creating a shooting game and aptly naming it Glock on the Clock. In the game the player controls a ship ">", and has to shoot all the randomly generated targets "+" on the stage before the times runs out. 
 
+## My Responsibilities:
+
+In this project, my responsibilities encompassed the implementation of user control over the ship, covering both movement and weapon usage. Additionally, I was charged with the dynamic placement of targets at random coordinates within the field, and overseeing interactions between the targets and the user-controlled ship. Furthermore, I took on the tasks of designing and implementing the point system, managing the timer, and incorporating a shop feature into the overall functionality of the project.
+
+## What I Learned:
+
+Through this project, I acquired a diverse skill set and valuable insights. Designing user controls for ship movement and weapon usage enhanced my programming skills, while implementing dynamic target spawning and interactions with the ship deepened my understanding of game mechanics. Taking charge of the point system, timer, and shop feature broadened my perspective on game development, emphasizing the importance of pacing and creating engaging user experiences. Overall, the project offered a comprehensive learning experience, touching on collision detection, system functionality, and the intricacies of in-game economies, collectively contributing to my growth as a developer.
+
 ## How the Game Works:
 
 (Playing Field) Room to Roam
