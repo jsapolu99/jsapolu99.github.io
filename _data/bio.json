@@ -18,12 +18,12 @@
     { "name": "Virtual Reality" },
     { "name": "Quantum Computing" },
     { "name": "Game Design" },
-    { "name": "Artifical Intelligence" }
+    { "name": "Artificial Intelligence" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Swift" ]
+      "keywords": [ "C", "C++", "Java", "JavaScript", "Swift" ]
     },
     {
       "name": "Toolsets/OS",
