@@ -70,7 +70,7 @@ Through this project, I acquired a diverse skill set and valuable insights. Desi
   - character can't walk through them
 - collisions are recognized with +1 score and target disappearing
 
-(Round Progress & Shop Curreny) Score
+(Round Progress & Shop Currency) Score
 - keeps track of number of targets destroyed minus spent points
 - 10 available score points per round
 - accumulates through the rounds
@@ -78,7 +78,7 @@ Through this project, I acquired a diverse skill set and valuable insights. Desi
 
 (Danger) Time limit
 - certain amount of time to shoot all targets before game over
-- differs with dificulty 
+- differs with difficulty 
 - time limit runs while player is able to move character
 
 (Optional Difficulty) Difficulty Setting
