@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Motion Capture Suit | Jonathan Sapolu | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/jsapolu99.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jonathan Sapolu | Professional Portfolio">
+    <meta property="og:url" content="https://jsapolu99.github.io/projects/vrsuit.html">
+    <meta property="og:title" content="Motion Capture Suit | Jonathan Sapolu | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/jsapolu99.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/lime.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Motion Capture Suit | Jonathan Sapolu | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Jonathan Sapolu</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Motion Capture Suit</h1>
+ <div class="text-center p-4">
+  <img width="200px" src="../img/vrsuit/D3C10055-1BA6-47A8-88EC-2EFEBF927F6D.jpeg" class="img-thumbnail" />
+  <img width="200px" src="../img/vrsuit/AF4DF049-9423-4120-8C4C-D30C1E06F37F.jpeg" class="img-thumbnail" />
+  <img width="200px" src="../img/vrsuit/EC6661AA-F450-4C7F-BAF3-C4E0B0E23722.jpeg" class="img-thumbnail" />
+</div>
+
+<p>Over the summer of 2021, I was part of a research team at Leeward Community College. Our goal was to develop and build a functional full body motion capture suit for use in virtual reality.</p>
+
+<h2 id="my-responsibilities">My Responsibilities:</h2>
+<p>My assignment involved the development of a Python program on the Raspberry Pi, responsible for interpreting data from sensors and transmitting it to the client computer. The objective was to facilitate the rendering of movement within the Unity Engine.</p>
+
+<h2 id="what-i-learned">What I learned:</h2>
+<p>In conclusion, my initial foray into Python was a rewarding experience, marked by significant learning under the guidance of our project-leading professor. This endeavor not only deepened my understanding of Python coding but also introduced me to the practical aspects of working with hardware, notably the Raspberry Pi and diverse sensors. This foundational knowledge has set the stage for continued growth and exploration in both programming and hardware integration.</p>
+
+<h2 id="materials">Materials</h2>
+<p>The materials for our project consist of a mixture of software and hardware:</p>
+
+<ul>
+  <li>The Power Gloves used Flex Sensors in conjunction with ADS1015 Analog to Digital Converters, which will be referred to as “ADC” from this point on.</li>
+  <li>BNO055 Orientation Sensors, or “Orientation Sensors” for future reference, were used for the Motion Capture Suit</li>
+  <li>We used a Raspberry Pi 4 equipped with Linux Operating System</li>
+  <li>We used Python to program the Raspberry Pi</li>
+  <li>We also used the Unity Engine and Visual Studio (for C# programing)</li>
+</ul>
+
+<h2 id="methods">Methods</h2>
+<ul>
+  <li>The FLEX SENSORS change resistance based upon the amount of bending. We used a voltage divider to determine the resistance and read the voltage with the ADCs</li>
+  <li>The ADCs convert the analog voltage data and converts it into digital data, to be sent to and read by the HOST COMPUTER, in our case, the RASPBERRY PI.</li>
+  <li>The ORIENTATION SENSORS collect yaw, pitch, and roll data from various actuation points, including the head, spine, the arms, and the legs, and also sends that data to the HOST COMPUTER.</li>
+  <li>The RASPBERRY PI is our HOST COMPUTER, which collects all the data from the sensors and sends it to the CLIENT COMPUTER.</li>
+  <li>The CLIENT COMPUTER runs the UNITY ENGINE, which reads and translates all the data being sent from the RASPBERRY PI to animate our Virtual Reality character UNITY-CHAN.</li>
+</ul>
+
+<h2 id="results">Results</h2>
+<p>The project was overall a success. We split the project into two parts the gloves component and the body suit component.</p>
+<ul>
+  <li>Gloves
+    <ul>
+      <li>The flex sensors were glued to each glove finger. Once tested, Raspberry Pi was able to distinguish between 0 45 and 90 degrees for each     finger. We made sure that the bend at each angle didn’t exceed the max amount of voltage (5 volts). We used 3 ADC and voltage dividers to read the sensor. And used the Raspberry Pi to read voltage on a single I2C bus</li>
+    </ul>
+  </li>
+  <li>Body Suit
+    <ul>
+      <li>A vest was used with a pocket attached to hold the Raspberry Pi and some of the wiring. This set up allowed for ease of movement while in use.</li>
+      <li>The raspberry pi collected information from both the gloves and the body suit.
+We were able to read all ten of the flex sensors and 12 orientation sensors. We adjusted the raspberry pi to accommodate 6 I2C busses so 2 orientation sensors could be read per bus, so that 
+data from all of the sensors can be read by the Raspberry Pi. We then created a socket program to send the data to the client computer, which animates Unity-Chan.</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
