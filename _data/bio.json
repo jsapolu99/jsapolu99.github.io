@@ -1,0 +1,75 @@
+{
+  "basics": {
+    "name": "Jonathan Sapolu",
+    "label": "Student",
+    "picture": "https://github.com/jsapolu99.png",
+    "email": "jsapolu@hawaii.edu",
+    "phone": "808-308-6853",
+    "website": "https://jsapolu99.github.io",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2024.",
+    "location": { "address": "92-947 Welo St Apt 92", "postalCode": "96707", "city": "Kapolei", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "jsapolu99", "url": "http://github.com/jsapolu99" },
+      { "network": "linkedin", "username": "jonathan-sapolu", "url": "https://www.linkedin.com/in/jonathan-sapolu-359821289/" },
+    ]
+  },
+  "interests": [
+    { "name": "Software Engineering" },
+    { "name": "Virtual Reality" },
+    { "name": "Quantum Computing" },
+    { "name": "Game Design" },
+    { "name": "Artificial Intelligence" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "C++", "Java", "JavaScript", "Swift" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (expected Fall, 2024)",
+      "studyType": "B.S.",
+      "startDate": "2019-09-01",
+      "endDate": "Present",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "University of Hawaii",
+      "position": "ATA Internship",
+      "website": "",
+      "startDate": "2023-09-21",
+      "endDate": "2023-12-14",
+      "summary": "",
+      "highlights": [
+        "Assist in the instruction of an ICS 211 lab",
+        "Help students grasp data-structure concepts"
+      ]
+    },
+    {
+      "company": "Regal Cinemas" ,
+      "position": "Assistant Manager",
+      "startDate": "2018-07-18",
+      "endDate": "2020-09-22",
+      "summary":"",
+      "highlights": [
+        "Training and development of staff.",
+        "Operational oversight and management.",
+        "Team leadership and motivation."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}

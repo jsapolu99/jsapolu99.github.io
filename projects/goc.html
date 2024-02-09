@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Glock on the Clock | Jonathan Sapolu | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/jsapolu99.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jonathan Sapolu | Professional Portfolio">
+    <meta property="og:url" content="https://jsapolu99.github.io/projects/goc.html">
+    <meta property="og:title" content="Glock on the Clock | Jonathan Sapolu | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/jsapolu99.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/lime.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Glock on the Clock | Jonathan Sapolu | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Jonathan Sapolu</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Glock on the Clock</h1>
+ <div class="text-center p-4">
+  <img src="../img/goc/8F6A1D3B-CE7E-4AE2-A66E-08D1664E870C.jpeg" class="img-thumbnail" />
+  <img src="../img/goc/FBEE3412-86F7-40FA-858E-2D51FFD42807.jpeg" class="img-thumbnail" />
+</div>
+
+<p>For the final project of EE 160, our team was tasked with creating an ASCII based game. After much deliberation my 2 group members and I, decided on creating a shooting game and aptly naming it Glock on the Clock. In the game the player controls a ship “&gt;”, and has to shoot all the randomly generated targets “+” on the stage before the times runs out.</p>
+
+<h2 id="my-responsibilities">My Responsibilities:</h2>
+
+<p>In this project, my responsibilities encompassed the implementation of user control over the ship, covering both movement and weapon usage. Additionally, I was charged with the dynamic placement of targets at random coordinates within the field, and overseeing interactions between the targets and the user-controlled ship. Furthermore, I took on the tasks of designing and implementing the point system, managing the timer, and incorporating a shop feature into the overall functionality of the project.</p>
+
+<h2 id="what-i-learned">What I Learned:</h2>
+
+<p>Through this project, I acquired a diverse skill set and valuable insights. Designing user controls for ship movement and weapon usage enhanced my programming skills, while implementing dynamic target spawning and interactions with the ship deepened my understanding of game mechanics. Taking charge of the point system, timer, and shop feature broadened my perspective on game development, emphasizing the importance of pacing and creating engaging user experiences. Overall, the project offered a comprehensive learning experience, touching on collision detection, system functionality, and the intricacies of in-game economies, collectively contributing to my growth as a developer.</p>
+
+<h2 id="how-the-game-works">How the Game Works:</h2>
+
+<p>(Playing Field) Room to Roam</p>
+<ul>
+  <li>border around the grid indicating position limits</li>
+</ul>
+
+<p>(Player Avatar) Character and Movement ‘wasd’</p>
+<ul>
+  <li>ability to move in all directions considering objects and limits</li>
+  <li>doesn’t leave trail</li>
+  <li>makes which way character is facing distinct</li>
+</ul>
+
+<p>(Ability) Shooting ‘o’</p>
+<ul>
+  <li>pressing a button fires bullet from character traveling in same direction while considering objects and limits
+    <ul>
+      <li>bullet stops and disappears after hitting a wall or target</li>
+    </ul>
+  </li>
+  <li>can hit targets (the collision is recognized with score)</li>
+</ul>
+
+<p>(Ability) Grenade ‘i’</p>
+<ul>
+  <li>button press to throw a grenade in front of character</li>
+  <li>rids anything destroyable in square radius (player included)
+    <ul>
+      <li>player can die and lose lives</li>
+    </ul>
+  </li>
+  <li>considers limits, character orientation, and character position
+    <ul>
+      <li>‘nades bounce back to land in an open position if too many obstacles ahead or too close to the border</li>
+    </ul>
+  </li>
+  <li>shows an animation of explosion considering limits and player</li>
+  <li>score increases the same amount as targets destroyed</li>
+</ul>
+
+<p>(2nd Degree Ability) Nuke ‘i button upgrade’</p>
+<ul>
+  <li>grenade upgrade functioning the same
+    <ul>
+      <li>except only unlocks through the shop and with enough score</li>
+      <li>all nades become nukes for a round if the option is bought</li>
+    </ul>
+  </li>
+  <li>bigger blast radius, different display messages, different animations and visuals (distinguishable from regular grenades)</li>
+  <li>destroying targets still recognized with incrementing score</li>
+  <li>suicide still recognized especially with the larger radius</li>
+  <li>still recognizes boundaries and the character position/orientation</li>
+</ul>
+
+<p>(Danger) Yourself</p>
+<ul>
+  <li>blast radius is a kill zone for the player
+    <ul>
+      <li>lose a life, respawn in starting position, and display warning messages</li>
+    </ul>
+  </li>
+  <li>no danger if character is beyond the blast</li>
+</ul>
+
+<p>(Objective) Targets to Destroy</p>
+<ul>
+  <li>randomly generated within room limits
+    <ul>
+      <li>always 10 total each round, no duplicate target positions</li>
+    </ul>
+  </li>
+  <li>only bullets, nades, and nukes interact with targets
+    <ul>
+      <li>character can’t walk through them</li>
+    </ul>
+  </li>
+  <li>collisions are recognized with +1 score and target disappearing</li>
+</ul>
+
+<p>(Round Progress &amp; Shop Currency) Score</p>
+<ul>
+  <li>keeps track of number of targets destroyed minus spent points</li>
+  <li>10 available score points per round</li>
+  <li>accumulates through the rounds</li>
+  <li>can be spent in the shop for perks</li>
+</ul>
+
+<p>(Danger) Time limit</p>
+<ul>
+  <li>certain amount of time to shoot all targets before game over</li>
+  <li>differs with difficulty</li>
+  <li>time limit runs while player is able to move character</li>
+</ul>
+
+<p>(Optional Difficulty) Difficulty Setting</p>
+<ul>
+  <li>player is prompted to choose a setting before round starts
+    <ul>
+      <li>regardless of how many rounds have passed</li>
+    </ul>
+  </li>
+  <li>Easy: 60 seconds   -Hard: 30 seconds   -Pro: 15 seconds</li>
+</ul>
+
+<p>(Losing) Game Over</p>
+<ul>
+  <li>display if player runs out of time</li>
+  <li>display if character lives reach 0</li>
+  <li>asks if player wants to play again</li>
+</ul>
+
+<p>(Winning) You Win</p>
+<ul>
+  <li>display if character shoots all targets within given time</li>
+  <li>asks if player wants to continue</li>
+  <li>asks if player wants to browse the shop</li>
+  <li>can continue with previous stats</li>
+</ul>
+
+<p>(Reward for Winning) Shop Option</p>
+<ul>
+  <li>exchange score points for the shop’s perks after winning
+*extra life for 5p
+*extra nades for 8p
+*nuke-nades next round for 10p</li>
+  <li>can buy multiple perks at once</li>
+</ul>
+
+<p>(Fun)</p>
+<ul>
+  <li>some color to be a bit more interesting and visually stimulating</li>
+  <li>built-in humor</li>
+  <li>challenge yourself</li>
+</ul>
+
+<p>You can try the game yourself, just click <a href="https://replit.com/@shiu9/finalproject">here</a>. Run the program and type “make” then “./hellomake”.</p>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
