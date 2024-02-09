@@ -53,6 +53,18 @@
         "Assist in the instruction of an ICS 211 lab",
         "Help students grasp data-structure concepts"
       ]
+    },
+    {
+      "company": "Regal Cinemas" ,
+      "position": "Assistant Manager",
+      "startDate": "2018-07-18",
+      "endDate": "2020-09-22",
+      "summary":"",
+      "highlights": [
+        "Training and development of staff.",
+        "Operational oversight and management.",
+        "Team leadership and motivation."
+      ]
     }
   ],
   "references": [
