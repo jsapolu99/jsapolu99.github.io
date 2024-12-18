@@ -9,7 +9,15 @@ jobs:
   github-pages:
     runs-on: ubuntu-22.04
     steps:
+      # Check out the repository code
       - uses: actions/checkout@v2
+
+      # Set up a user-level Ruby environment
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Use a recent Ruby version
+
+      # Cache gems to speed up builds
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
@@ -17,14 +25,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      # Add a step to update RubyGems before running the Jekyll action
+      # Update RubyGems to avoid ffi compatibility issues
       - name: Update RubyGems
         run: gem update --system
 
+      # (Optional) Validate JSON syntax before building site
       - uses: limitusus/json-syntax-check@v1
         with:
           pattern: "\\bio.json$"
 
+      # Install project dependencies
+      - name: Install Dependencies
+        run: bundle install
+
+      # Build and deploy Jekyll site to GitHub Pages branch
       - uses: helaili/jekyll-action@2.5.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
