@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Jonathan Sapolu",
-    "label": "Student",
+    "label": "Software Developer",
     "picture": "https://github.com/jsapolu99.png",
-    "email": "jsapolu@hawaii.edu",
+    "email": "jonathansapolu3@gmail.com",
     "phone": "808-308-6853",
     "website": "https://jsapolu99.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2024.",
-    "location": { "address": "92-947 Welo St Apt 92", "postalCode": "96707", "city": "Kapolei", "countryCode": "USA", "region": "Hawaii" },
+    "summary": "Recent Computer Science graduate from the University of Hawaii with hands-on experience in full-stack development, AI integration, and real-time web applications. Actively seeking full-time opportunities to contribute to innovative software projects and continue growing as a developer.",
+    "location": { "address": "10174 Eden Mountain St", "postalCode": "89141", "city": "Las Vegas", "countryCode": "USA", "region": "Nevada" },
     "profiles": [
       { "network": "github", "username": "jsapolu99", "url": "http://github.com/jsapolu99" },
       { "network": "linkedin", "username": "jonathan-sapolu", "url": "https://www.linkedin.com/in/jonathan-sapolu-359821289/" },
@@ -36,7 +36,7 @@
       "area": "Computer Science (expected Fall, 2024)",
       "studyType": "B.S.",
       "startDate": "2019-09-01",
-      "endDate": "Present",
+      "endDate": "2024-12-16",
       "courses": [
       ]
     }
