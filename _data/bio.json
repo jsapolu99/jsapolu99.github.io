@@ -23,7 +23,7 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "JavaScript", "Swift" ]
+      "keywords": [ "C", "C++", "Java", "JavaScript", "Swift", "TypeScript", "Next.JS" ]
     },
     {
       "name": "Toolsets/OS",
@@ -33,7 +33,7 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Fall, 2024)",
+      "area": "Computer Science",
       "studyType": "B.S.",
       "startDate": "2019-09-01",
       "endDate": "2024-12-16",
@@ -42,6 +42,18 @@
     }
   ],
   "work": [
+    {
+      "company": "UBreakIFix" ,
+      "position": "Repair Technician",
+      "startDate": "2024-01-06",
+      "endDate": "2025-01-22",
+      "summary":"",
+      "highlights": [
+        "Troubleshot complex technical issues using systematic, analytical approaches.",
+        "Followed structured repair workflows to ensure consistent, high-quality results.",
+        "Communicated technical findings clearly to both technical and non-technical users."
+      ]
+    },
     {
       "company": "University of Hawaii",
       "position": "ATA Internship",
@@ -52,18 +64,6 @@
       "highlights": [
         "Assist in the instruction of an ICS 211 lab",
         "Help students grasp data-structure concepts"
-      ]
-    },
-    {
-      "company": "Regal Cinemas" ,
-      "position": "Assistant Manager",
-      "startDate": "2018-07-18",
-      "endDate": "2020-09-22",
-      "summary":"",
-      "highlights": [
-        "Training and development of staff.",
-        "Operational oversight and management.",
-        "Team leadership and motivation."
       ]
     }
   ],
